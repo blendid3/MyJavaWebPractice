@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+<script>
+    function fun1(goodName) {
+        var idName = "\"" + goodName + "\"";
+        document.getElementById(idName).innerHTML = parseInt(document.getElementById(idName).textContent) + 1;
+    }
+</script>
+
+<ul>
+
+
+    <h1>myPC</h1>
+    <a href="#"><img src="./images/img.png" alt="product_image"></a>
+
+    <br>
+    <button type="button" onclick="fun1("myPC")">buy it!!!</button>
+
+
+
+
+    <li>click it to buy it!!! purchasing amount: <p id="myPC">0</p> </li>
+
+
+    <h1>monitor</h1>
+    <a href="#"><img src="./images/img_1.png" alt="product_image"></a>
+
+    <br>
+    <button type="button" onclick="fun1("monitor")">buy it!!!</button>
+
+
+
+
+    <li>click it to buy it!!! purchasing amount: <p id="monitor">0</p> </li>
+
+
+</ul>
+<a href="mainPlatform.jsp">return back</a>
+<a href="controller?action=submitOrder"></a>
+</body>
+</html>

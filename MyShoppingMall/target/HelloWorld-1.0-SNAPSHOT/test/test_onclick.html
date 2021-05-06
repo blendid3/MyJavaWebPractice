@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="test">0</p>
+<!--<h1>${good.NAME}</h1>-->
+<!--<a href="#"><img src="./images/${good.image}" alt="product_image"></a>-->
+<!--<br>-->
+<button  onclick="fun1()">buy it!!!</button>
+<!--<ul>-->
+
+
+
+<!--        <li>click it to buy it!!! purchasing amount: <span id=${good.NAME}>0</span> </li>-->
+<!--</ul>-->
+<!--<a href="mainPlatform.jsp">return back</a>-->
+<!--<a href="controller?action=submitOrder"></a>-->
+
+<script>
+    function fun1() {
+        console.log(parseInt(document.getElementById("test").textContent));
+        document.getElementById("test").innerHTML = parseInt(document.getElementById("test").textContent) + 1;
+    }
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+</script>
+</body>
+</html>
